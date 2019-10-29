@@ -11,7 +11,7 @@ import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class MainActivity extends AppCompatActivity {
-private ImageView imageViewDice;
+private DiceView imageViewDice;
 private Random rnd=new Random();
 
     @Override
