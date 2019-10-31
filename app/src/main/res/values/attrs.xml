@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="DiceView">
-        <attr name="square_color" format="color">
+        <attr name="layout_width" format="color">
     </attr>
+        <attr name="layout_heigth" format="color">
+        </attr>
+
     </declare-styleable>
 </resources>
