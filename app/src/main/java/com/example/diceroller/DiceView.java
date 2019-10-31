@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.RectF;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 
 import androidx.annotation.Nullable;
@@ -20,16 +21,16 @@ public class DiceView extends View {
     public static float DICE_CIRCLE_RADIUS = 0;
     public static int[] RECT_COORDS = {-6, -6, -6, -6};
     public int randomInt = 1;
-    public int DICE_DOT_BOTTOM_Y=-6;
-    public int DICE_DOT_RIGHT_X=-6;
-    public int DICE_DOT_LEFT_X=-6;
-    public int DICE_DOT_TOP_Y=-6;
-    public int DICE_DOT_CENTER_X=-6;
-    public int DICE_DOT_CENTER_Y=-6;
-    public int DICE_DOT_LEFT_CENTER_X=-6;
-    public int DICE_DOT_RIGHT_CENTER_X=-6;
-    public int DICE_RECT_OVAL_X=-6;
-    public int DICE_RECT_OVAL_Y=-6;
+    public int DICE_DOT_BOTTOM_Y = -6;
+    public int DICE_DOT_RIGHT_X = -6;
+    public int DICE_DOT_LEFT_X = -6;
+    public int DICE_DOT_TOP_Y = -6;
+    public int DICE_DOT_CENTER_X = -6;
+    public int DICE_DOT_CENTER_Y = -6;
+    public int DICE_DOT_LEFT_CENTER_X = -6;
+    public int DICE_DOT_RIGHT_CENTER_X = -6;
+    public int DICE_RECT_OVAL_X = -6;
+    public int DICE_RECT_OVAL_Y = -6;
 
 
     Paint paint = new Paint();
@@ -46,10 +47,6 @@ public class DiceView extends View {
         super(context, attrs, defStyleAttr);
     }
 
-    @Override
-    protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
-
-    }
 
     private void rolldice() {
         Random rnd = new Random();
@@ -63,9 +60,10 @@ public class DiceView extends View {
         return super.performClick();
     }
 
+
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        paint.setColor(Color.YELLOW);
+        paint.setColor(Color.GREEN);
 
         if (RECT_COORDS[0] == -6) {
             RECT_COORDS[0] = (int) getContext().getResources().getDimension(R.dimen.dice_rect_left);
@@ -124,9 +122,9 @@ public class DiceView extends View {
             DICE_RECT_OVAL_Y = (int) getContext().getResources().getDimension(R.dimen.dice_rect_oval_y);
         }
 
-        canvas.drawRoundRect(rect,DICE_RECT_OVAL_X,DICE_RECT_OVAL_Y,paint);
+        canvas.drawRoundRect(rect, DICE_RECT_OVAL_X, DICE_RECT_OVAL_Y, paint);
 
-        paint.setColor(Color.BLACK);
+        paint.setColor(Color.RED);
         switch (randomInt) {
 
             case 1:
