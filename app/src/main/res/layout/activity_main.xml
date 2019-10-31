@@ -13,7 +13,6 @@
         android:clickable="true"
         android:focusable="true"
         android:src="@drawable/dice1"
-        android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.612"
         app:layout_constraintLeft_toLeftOf="parent"
