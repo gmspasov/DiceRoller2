@@ -1,6 +1,8 @@
 package com.example.diceroller;
 
+import android.app.ActionBar;
 import android.content.Context;
+<<<<<<< Updated upstream
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -9,6 +11,12 @@ import android.graphics.Color;
 import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.graphics.Rect;
+=======
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.Matrix;
+>>>>>>> Stashed changes
 import android.os.Build;
 import android.util.AttributeSet;
 import android.view.View;
@@ -19,16 +27,19 @@ import androidx.annotation.RequiresApi;
 import java.util.Random;
 
 public class DiceView extends View {
+<<<<<<< Updated upstream
 
 private         Bitmap                  bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.dice1);
 private Matrix m=new Matrix();
     ;
 
+=======
+>>>>>>> Stashed changes
 
-
-    Rect mRect;
-    Paint mPaint;
-    int mSquareColor;
+    private Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.dice1);
+    private Matrix m = new Matrix();
+    float scaleWidth = 100/640f;
+    float scaleHeight = 100/632f;
 
     public DiceView(Context context) {
         super(context);
@@ -49,16 +60,8 @@ private Matrix m=new Matrix();
 
 
     private void init(@Nullable AttributeSet set) {
-        mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        mRect = new Rect();
-        if (set == null) {
-            return;
-        }
+        m.postScale(scaleWidth,scaleHeight);
 
-        TypedArray ta = getContext().obtainStyledAttributes(set, R.styleable.DiceView);
-        mSquareColor = ta.getColor(R.styleable.DiceView_square_color, Color.GREEN);
-        mPaint.setColor(mSquareColor);
-        ta.recycle();
     }
 
 
@@ -70,6 +73,7 @@ private Matrix m=new Matrix();
 
         switch (randomInt) {
             case 1:
+<<<<<<< Updated upstream
                  bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.dice1);
                 break;
 
@@ -87,6 +91,25 @@ private Matrix m=new Matrix();
 
             case 5:
                  bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.dice5);
+=======
+                bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.dice1);
+                break;
+
+            case 2:
+                bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.dice2);
+                break;
+
+            case 3:
+                bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.dice3);
+                break;
+
+            case 4:
+                bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.dice4);
+                break;
+
+            case 5:
+                bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.dice5);
+>>>>>>> Stashed changes
                 break;
 
             case 6:
@@ -97,6 +120,7 @@ private Matrix m=new Matrix();
 
     @Override
     public boolean performClick() {
+        invalidate();
         rolldice();
         invalidate();
         return super.performClick();
@@ -106,6 +130,10 @@ private Matrix m=new Matrix();
         super.onDraw(canvas);
         canvas.drawBitmap(bitmap, m, null);
     }
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 }
 
 
