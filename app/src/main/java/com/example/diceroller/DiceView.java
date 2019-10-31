@@ -1,5 +1,6 @@
 package com.example.diceroller;
 
+import android.app.ActionBar;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -35,7 +36,7 @@ public class DiceView extends View {
     }
 
     public DiceView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
-        super(context, attrs, defStyleAttr);
+        super(context, attrs, defStyleAttr);;
         init(attrs);
     }
 
@@ -44,7 +45,8 @@ public class DiceView extends View {
 
     private void init(@Nullable AttributeSet set) {
         m.postScale(scaleWidth,scaleHeight);
-
+         //this.getLayoutParams().width=100;
+        // this.getLayoutParams().height=100;
     }
 
 
