@@ -8,8 +8,8 @@
 
     <com.example.diceroller.DiceView
         android:id="@+id/image_view_dice"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="@dimen/width"
+        android:layout_height="@dimen/height"
         android:focusable="true"
         android:src="@drawable/dice1"
         android:clickable="true"

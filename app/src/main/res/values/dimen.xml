@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="height">200dp</dimen>
+    <dimen name="width">200dp</dimen>
+    <dimen name="text_size">50dp</dimen>
+    <dimen name="dice_circle_radius">12dp</dimen>
+    <dimen name="dice_rect_left">45dp</dimen>
+    <dimen name="dice_rect_top">45dp</dimen>
+    <dimen name="dice_rect_right">155dp</dimen>
+    <dimen name="dice_rect_bottom">155dp</dimen>
+    <dimen name="dice_dot_center_y">100dp</dimen>
+    <dimen name="dice_dot_center_x">100dp</dimen>
+    <dimen name="dice_dot_left_center_x">85dp</dimen>
+    <dimen name="dice_dot_right_center_x">115dp</dimen>
+    <dimen name="dice_dot_top_y">70dp</dimen>
+    <dimen name="dice_dot_bottom_y">130dp</dimen>
+    <dimen name="dice_dot_left_x">70dp</dimen>
+    <dimen name="dice_dot_right_x">130dp</dimen>
+    <dimen name="dice_rect_oval_x">10dp</dimen>
+    <dimen name="dice_rect_oval_y">10dp</dimen>
+
+
+
+
+</resources>
