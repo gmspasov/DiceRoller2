@@ -10,14 +10,14 @@ import android.widget.ImageView;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
+import static com.example.diceroller.R.id.image_view_dice;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        DiceView d=new DiceView(this);
-        d=findViewById(R.id.image_view_dice);
     }
 
 }

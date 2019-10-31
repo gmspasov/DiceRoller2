@@ -10,7 +10,7 @@ import androidx.appcompat.widget.AppCompatImageView;
 
 import java.util.Random;
 
-public class DiceView extends AppCompatImageView {
+public class DiceImageView extends AppCompatImageView {
 
 
 
