@@ -15,17 +15,17 @@ public class DiceImageView extends AppCompatImageView {
 
 
 
-    public DiceView(Context context) {
+    public DiceImageView(Context context) {
         super(context);
         init(null);
     }
 
-    public DiceView(Context context, @Nullable AttributeSet attrs) {
+    public DiceImageView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         init(attrs);
     }
 
-    public DiceView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public DiceImageView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init(attrs);
     }
