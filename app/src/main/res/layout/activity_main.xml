@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.example.diceroller.DiceView
+    <com.example.diceroller.DiceImageView
         android:id="@+id/image_view_dice"
         android:layout_width="@dimen/width"
         android:layout_height="@dimen/height"
