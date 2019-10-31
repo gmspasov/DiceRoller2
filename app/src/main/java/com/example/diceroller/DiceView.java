@@ -1,10 +1,6 @@
 package com.example.diceroller;
 
 import android.content.Context;
-import android.content.res.TypedArray;
-import android.graphics.Color;
-import android.graphics.Paint;
-import android.graphics.Rect;
 import android.os.Build;
 import android.util.AttributeSet;
 
@@ -17,9 +13,7 @@ import java.util.Random;
 public class DiceView extends AppCompatImageView {
 
 
-    Rect mRect;
-    Paint mPaint;
-    int mSquareColor;
+
 
     public DiceView(Context context) {
         super(context);
@@ -40,16 +34,6 @@ public class DiceView extends AppCompatImageView {
 
 
     private void init(@Nullable AttributeSet set) {
-        mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        mRect = new Rect();
-        if (set == null) {
-            return;
-        }
-
-        TypedArray ta = getContext().obtainStyledAttributes(set, R.styleable.DiceView);
-        mSquareColor = ta.getColor(R.styleable.DiceView_square_color, Color.GREEN);
-        mPaint.setColor(mSquareColor);
-        ta.recycle();
     }
 
 
